@@ -1,19 +1,41 @@
 
-@font-face {
-    font-family: 'bold';
-        
+    @font-face {
+        font-family: 'bold';
         src:    url('../fonts/02272f01a6a057304b0d429448157b90.eot?#iefix') format('embedded-opentype'),
                 url('../fonts/02272f01a6a057304b0d429448157b90.woff') format('woff'),
                 url('../fonts/02272f01a6a057304b0d429448157b90.woff2') format('woff2');
     }
     @font-face {
-    font-family: 'reg';
-        
+        font-family: 'reg';
         src:    url('../fonts/b8b1b86f9c4ed5a682b93ae3bff6a0ec.eot?#iefix') format('embedded-opentype'),
                 url('../fonts/b8b1b86f9c4ed5a682b93ae3bff6a0ec.woff') format('woff'),
                 url('../fonts/b8b1b86f9c4ed5a682b93ae3bff6a0ec.woff2') format('woff2');
     }
-    
+    nav.navigation{
+        ul{
+            @extend .no-list;
+            li{
+                a{
+                    display: flex;
+                    align-items: center;
+                    padding: 7px 0;
+                    margin-left: -10px;
+                    color: #676464;
+                    font-size: 16px;
+                    cursor: pointer;
+                    padding-left: 10px;
+                    background-position: bottom;
+                    &:hover{
+                        border-radius: 10px;
+                        font-family: bold;
+                        background-position: left;
+                        color: #111;
+                        background: url(../../images/divr.png) no-repeat;
+                    }
+                }
+            }
+        }
+    }
     a{
         color:inherit;
     }
@@ -322,7 +344,10 @@
     }
     
     
-    .main-right-div2 div{
+    .main-right-div2 div,
+    .main-right-div2 span{
+        display: flex;
+        align-items: center;
         padding:7px 0px;
             margin-left:-10px;
             color:#676464;
@@ -331,7 +356,8 @@
         padding-left:10px;
           background-position: bottom
     }
-    .main-right-div2 div:hover{
+    .main-right-div2 div:hover,
+    .main-right-div2 span:hover{
         border-radius:10px;
           font-family: 'bold';  
               background-position: left;

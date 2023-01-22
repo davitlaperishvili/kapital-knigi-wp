@@ -12,7 +12,7 @@ $dl_inc_dir = get_template_directory() . '/inc';
 
 // Array of files to include
 $dl_includes = array(
-    // '/setup.php',
+    '/setup.php',
     '/widgets.php',
     '/enqueue.php',
     '/menus.php',
