@@ -183,7 +183,7 @@ $main_buttons = get_field("main_buttons", "option");
               <div class="main-right-div1">Навигация</div>
               <div class="main-right-div2">
                 <?php foreach ($menu as $item) {?>
-                    <a href="<?php echo $item['menu_url'] ?>"> <div><?php echo $item['menu_text'] ?></div></a>
+                    <a href="<?php echo $item['menu_url'] ?>"> <span><?php echo $item['menu_text'] ?></span></a>
                   <?php }?>
               </div>
             </div>
